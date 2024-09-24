@@ -1,0 +1,290 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.7.6" pages="3">
+  <diagram id="XlAP0SzofvrFyti-Z2co" name="How RAFT Works">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nFWonWOLNxYDwCNofgwh-29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="65" y="450" width="540" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-28" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="140" width="530" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-1" target="nFWonWOLNxYDwCNofgwh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#266B99;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-1" target="nFWonWOLNxYDwCNofgwh-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-1" value="The User Question is converted from string values into embeddings." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#266B99;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-2" target="nFWonWOLNxYDwCNofgwh-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-2" value="The User Question embedding is used to query our Pickle File of the EU AI Act." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#266B99;" edge="1" parent="1" target="nFWonWOLNxYDwCNofgwh-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="430" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#266B99;strokeWidth=4;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-4" target="nFWonWOLNxYDwCNofgwh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-4" target="nFWonWOLNxYDwCNofgwh-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-4" value="&lt;div&gt;The combined output is input to our fine-tuned model to generate an answer.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#266B99;strokeWidth=4;" edge="1" parent="1" source="nFWonWOLNxYDwCNofgwh-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-5" value="&lt;div&gt;Our Model generates an output based on the RAG input, the User Question and the Fine-Tuned Information&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="275" y="580" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#266B99;" edge="1" parent="1" target="nFWonWOLNxYDwCNofgwh-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-8" value="Convert the user&#39;s question into an embedding using a pre-trained model (GoogleT5) (from String to embedding)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="160" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-30" value="RAG Process" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="470" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-31" value="Fine Tuned LLM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="470" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-33" value="The Relevant Chunks of the EU AI Act are Retrieved from the Vector Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="110" y="251.25" width="125" height="97.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-36" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;User Inputs Question into Flask app" style="shape=manualInput;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-37" value="Flask App Outputs the Answer" style="shape=display;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="265" y="730" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-38" value="Output: The User Question&amp;nbsp;&lt;div&gt;and the Relevant EU AI Act Chunks&amp;nbsp;&lt;/div&gt;&lt;div&gt;are Combined&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;dashed=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="370" width="275" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-40" value="We are using Google T5 pre-Trained on our Q&amp;amp;A Pairs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nFWonWOLNxYDwCNofgwh-44" value="&lt;b style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; background-color: rgb(132, 213, 247); font-size: 14px;&quot; color=&quot;#266b99&quot;&gt;How RAFT Works&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#266B99;strokeWidth=3;fillColor=#84D5F7;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="240" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-0" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;High Level System Design for RAFT&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="20" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="105" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-3" value="End" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="930" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-4" target="4dzAkjAqwVQqH7BvI6Jv-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-4" target="4dzAkjAqwVQqH7BvI6Jv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-4" value="Retrival Process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="700" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-6" target="Mw706MPNtFyzm7-MRcpI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-6" target="Mw706MPNtFyzm7-MRcpI-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-6" target="Mw706MPNtFyzm7-MRcpI-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-6" value="Indexing Knowledge Base" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="370" y="115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-7" target="Mw706MPNtFyzm7-MRcpI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-7" target="4dzAkjAqwVQqH7BvI6Jv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-7" value="Combining Input and Retrieved information" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="690" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-8" target="Mw706MPNtFyzm7-MRcpI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-8" target="4dzAkjAqwVQqH7BvI6Jv-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-8" target="4dzAkjAqwVQqH7BvI6Jv-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-8" value="Fine Tuning the Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-9" target="Mw706MPNtFyzm7-MRcpI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-9" value="Evaluation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-10" target="Mw706MPNtFyzm7-MRcpI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-10" value="Deployment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.592;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-4" target="Mw706MPNtFyzm7-MRcpI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-20" target="Mw706MPNtFyzm7-MRcpI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-20" target="Mw706MPNtFyzm7-MRcpI-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Mw706MPNtFyzm7-MRcpI-20" target="Mw706MPNtFyzm7-MRcpI-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-20" value="Data Collection and Preparation" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="100" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-23" value="EU AI Act.pdf" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-26" value="Q&amp;amp;A Pairs Document" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-29" value="&lt;div&gt;Convert documents into embeddings.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw706MPNtFyzm7-MRcpI-33" value="&lt;div&gt;Index embeddings using FAISS for efficient retrieval.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-0" value="Tokenisation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-1" value="Training" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-6" value="&lt;div&gt;Concatenated Input&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-10" value="Obtain input text embedding" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dzAkjAqwVQqH7BvI6Jv-11" value="&lt;div&gt;Retrieve relevant documents from the knowledge base using FAISS.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="400" width="140" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DzrXzeFv-bpX4aiIj5SF" name="Page-3">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BfFiXAWOO-nq55tiERy_-1" value="How to Code RAFT" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#266B99;strokeWidth=3;fillColor=#84D5F7;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-2" target="BfFiXAWOO-nq55tiERy_-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="410" y="60" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-3" value="End" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="410" y="860" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-4" target="BfFiXAWOO-nq55tiERy_-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-4" value="&lt;meta charset=&quot;utf-8&quot;&gt;Import Necessary Libraries" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-15" target="BfFiXAWOO-nq55tiERy_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-15" value="&lt;div&gt;Load Vector Store , Data Collator and Model&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-16" target="BfFiXAWOO-nq55tiERy_-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-16" value="Load the Fine-Tuned LLM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-17" target="BfFiXAWOO-nq55tiERy_-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-17" target="BfFiXAWOO-nq55tiERy_-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-17" value="&lt;meta charset=&quot;utf-8&quot;&gt;Define Helper Functions" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-18" target="BfFiXAWOO-nq55tiERy_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-18" value="&lt;div&gt;Define the RAFT Process&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-19" target="BfFiXAWOO-nq55tiERy_-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-19" value="&lt;div&gt;RAFT Pipeline&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-4" target="BfFiXAWOO-nq55tiERy_-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="322.99" y="202.94000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-23" value="&lt;span class=&quot;hljs-comment&quot;&gt;# Load the vector store from a pickle file&lt;/span&gt;&lt;br/&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;open&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&#39;EU_AI_Act.pkl&#39;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&#39;rb&#39;&lt;/span&gt;) &lt;span class=&quot;hljs-keyword&quot;&gt;as&lt;/span&gt; file:&lt;br/&gt;    vector_store = pickle.load(file)&lt;br/&gt;&lt;br/&gt;documents = vector_store[&lt;span class=&quot;hljs-string&quot;&gt;&#39;documents&#39;&lt;/span&gt;]&lt;br/&gt;document_embeddings = np.array(vector_store[&lt;span class=&quot;hljs-string&quot;&gt;&#39;embeddings&#39;&lt;/span&gt;])&lt;br/&gt;&lt;br/&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# Load the FAISS index&lt;/span&gt;&lt;br/&gt;dimension = document_embeddings.shape[&lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;]&lt;br/&gt;index = faiss.IndexFlatL2(dimension)&lt;br/&gt;index.add(document_embeddings)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="220" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BfFiXAWOO-nq55tiERy_-15" target="BfFiXAWOO-nq55tiERy_-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-28" value="&lt;div&gt;embed_question: Converts the user question into an embedding.&lt;/div&gt;&lt;div&gt;retrieve_documents: Retrieves the most relevant documents based on the question embedding.&lt;/div&gt;&lt;div&gt;combine_input_and_retrieved_info: Combines the user question with the retrieved documents.&lt;/div&gt;&lt;div&gt;generate_answer: Generates the answer using the combined input and the fine-tuned model.&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="90" y="320" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-30" value="raft_pipeline: Implements the RAFT process from embedding the user question to generating the answer." style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="580" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BfFiXAWOO-nq55tiERy_-35" value="import pickle&lt;br&gt;import torch&lt;br&gt;from transformers import T5Tokenizer, T5ForConditionalGeneration&lt;br&gt;import faiss&lt;br&gt;import numpy as np&lt;div&gt;&lt;div&gt;import os&lt;/div&gt;&lt;div&gt;import math&lt;/div&gt;&lt;div&gt;from peft import LoraConfig, get_peft_model&lt;/div&gt;&lt;div&gt;DataCollatorForSeq2Seq&lt;/div&gt;&lt;div&gt;from transformers import T5ForConditionalGeneration, Seq2SeqTrainingArguments, Seq2SeqTrainer&lt;/div&gt;&lt;div&gt;from google.colab import userdata&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="105" width="270" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
